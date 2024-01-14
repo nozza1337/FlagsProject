@@ -14,8 +14,6 @@ const getCountries = async () => {
                 const productInfoDiv = document.createElement("div");
                 const image = document.createElement("img");
 
-
-
                 image.src = country.flags.png;
                 productInfoDiv.append(image)
                 productInfoDiv.innerHTML += `<h1>${country.name.common}</h1>`
@@ -39,6 +37,8 @@ const getCountries = async () => {
         });
 
 
+
+        
 
 
         regionDropdown.addEventListener('change', () => {
